@@ -11,5 +11,6 @@
   },
   "dependencies": {
     "@rollup/pluginutils": "^3.0.10"
-  }
+  },
+  "type": "module"
 }
