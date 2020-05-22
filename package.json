@@ -1,0 +1,15 @@
+{
+  "name": "rollup-plugin-transform-input",
+  "version": "1.0.0",
+  "description": "Rollup plugin to run a transform function on the input (source) files.",
+  "main": "index.js",
+  "author": "RedHatter",
+  "license": "MIT",
+  "repository": "RedHatter/rollup-plugin-transform-input",
+  "peerDependencies": {
+    "rollup": "^2.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^3.0.10"
+  }
+}
