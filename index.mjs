@@ -36,7 +36,12 @@ export default function (options = {}) {
     async load (id) {
       if (!load || !filter(id)) return null
 
-      await transformSource(await fs.readFile(id, 'utf8'), id)
+      try {
+        await transformSource(await fs.readFile(id, 'utf8'), id)
+      } catch (err) {
+        if (err.code !== 'ENOENT') throw err
+      }
+      
       return null
     },
 
